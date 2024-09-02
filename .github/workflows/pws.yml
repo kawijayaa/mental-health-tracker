@@ -23,4 +23,5 @@ jobs:
           git branch -M master
           git config --global core.compression 0
           git config --global http.postBuffer 2147483648
+          ls .git/refs/heads -all
           git push pws master
