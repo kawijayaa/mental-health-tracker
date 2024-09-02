@@ -19,9 +19,5 @@ jobs:
         run: |
           git remote add pws $PWS_REPO_URL
           git branch -M master
-          git config --global http.postBuffer 157286400
-          git config --global http.lowSpeedLimit 1000
-          git config --global http.lowSpeedTime 20
-          git config --global pack.window 1
-          git config --global pack.depth 1
+          git config --global http.postBuffer 5242
           git push pws master
