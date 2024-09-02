@@ -7,6 +7,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      GIT_HTTP_TIMEOUT: 300
     steps:
       - uses: actions/checkout@v3
       - name: Setup Git Config
